@@ -12,7 +12,6 @@ Disallow: /tmp/
 Disallow: /admin/
 
 Sitemap: https://faltapoco.com/sitemap-index.xml
-# Si usás el sitemap simple: https://faltapoco.com/sitemap.xml
 
 # Crawl-delay opcional para evitar sobrecarga (puede omitirse)
 # Crawl-delay: 5
