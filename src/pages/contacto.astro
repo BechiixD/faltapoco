@@ -1,17 +1,24 @@
 ---
 import Layout from "../Layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.jsx";
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
 ---
 
-<Layout title="Contacto">
-    <main
-        class="flex flex-col items-center justify-center flex-grow px-4 py-8 space-y-12 text-center md:gap-16"
-    >
-        <h1 class="text-4xl font-bold">Contacto</h1>
-        <p class="max-w-xl text-lg">
-            Si deseas ponerte en contacto con nosotros, por favor envíanos un
-            correo electrónico a
-            <a href="mailto:contacto@faltapoco.com">contacto@faltapoco.com</a>.
-        </p>
-    </main>
+<Layout title="Contact">
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                    Get In Touch
+                </h2>
+                <p class="text-center text-gray-500 mb-12">
+                    Have a project in mind or want to collaborate? Feel free to
+                    reach out!
+                </p>
+                <div class="bg-white rounded-xl shadow p-8">
+                    <ContactForm accessKey={accessKey} client:load />
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
-
