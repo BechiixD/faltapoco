@@ -1,16 +1,111 @@
 ---
+import Layout from "../Layouts/Layout.astro";
+import "../styles/global.css";
 
+const eventos = [
+  { nombre: "Mundial 2026", url: "/mundial-2026" },
+  { nombre: "Juegos Olímpicos 2028", url: "/olimpicos-2028" },
+  { nombre: "Navidad", url: "/navidad" },
+  { nombre: "Año Nuevo", url: "/ano-nuevo" },
+  { nombre: "Verano 2026", url: "/verano-2026" },
+];
+
+const pageTitle = "Faltapoco.com | Contadores para todo tipo de eventos";
+const description =
+  "Mirá cuánto falta para los próximos eventos del mundo: el Mundial 2026, los Juegos Olímpicos, Navidad, Año Nuevo y más. Contadores en tiempo real actualizados al segundo.";
+const url = "https://faltapoco.com";
+const image = "https://faltapoco.com/og/faltapoco.png";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Falta Poco">
+  <Fragment slot="head">
+    <!-- Meta SEO -->
+    <meta name="description" content={description} />
+    <meta name="keywords" content="cuánto falta, faltapoco, contador de eventos, mundial 2026, olimpiadas 2028, navidad, año nuevo" />
+    <link rel="canonical" href={url} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Faltapoco.com",
+        url,
+        description,
+        potentialAction: {
+          "@type": "SearchAction",
+          target: `${url}/search?q={search_term_string}`,
+          "query-input": "required name=search_term_string",
+        },
+      })}
+    </script>
+  </Fragment>
+  
+	<main
+		class="flex flex-col items-center justify-center flex-grow px-4 py-8 space-y-12 text-center md:gap-16"
+	>
+		<h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-2">
+			¿Cuánto tiempo falta para
+			<span
+				class="bg-gradient-to-r from-[#0B5FFF] via-gray-400 to-[#0B5FFF] bg-clip-text text-transparent animate-gradient"
+				style="display: inline-block;"
+			>
+				...
+			</span>?
+		</h1>
+
+		<style>
+			@keyframes gradient-move {
+				0% {
+					background-position: 0% 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+			.animate-gradient {
+				background-size: 200% 200%;
+				animation: gradient-move 4s ease-in-out infinite;
+			}
+		</style>
+
+		<section class="max-w-5xl w-full space-y-6 text-center mx-auto">
+			<p
+				class="text-lg sm:text-xl md:text-2xl text-gray-700 font-semibold"
+			>
+				Selecciona un evento del menú para ver cuánto tiempo falta.
+			</p>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+				{
+					eventos.map((evento) => (
+						<a
+							href={evento.url}
+							class="block p-6 rounded-lg shadow bg-white hover:bg-[#0B5FFF] hover:text-white transition-colors"
+						>
+							<h2 class="text-2xl font-semibold">
+								{evento.nombre}
+							</h2>
+						</a>
+					))
+				}
+			</div>
+		</section>
+	</main>
+</Layout>
