@@ -3,14 +3,23 @@ import Layout from "../Layouts/Layout.astro";
 import "../styles/global.css";
 
 const eventos = [
-  { nombre: "Mundial 2026", url: "/mundial-2026" },
+  { nombre: "Mundial 2026", url: "/mundial" },
   { nombre: "Black Friday", url: "/black-friday" },
   { nombre: "Navidad", url: "/navidad" },
+  { nombre: "Año Nuevo", url: "/año-nuevo" },
+  { nombre: "Juegos Olímpicos 2028", url: "/juegos-olimpicos" },
+  { nombre: "Lanzamiento del iPhone 18", url: "/proximo-iphone-lanzamiento" },
+  { nombre: "League of Legends Worlds 2026", url: "/lol-world-championship" },
+  { nombre: "Semana Santa 2026", url: "/semana-santa" },
+  { nombre: "Día de Reyes Magos 2026", url: "/reyes-magos" },
+  { nombre: "Eclipse Total de Sol 2026", url: "/eclipses-europa" },
+  { nombre: "Eclipse Anular 2027 (Latinoamérica)", url: "/eclipses-latinoamerica" },
+
 ];
 
-const pageTitle = "Faltapoco.com | Contadores para todo tipo de eventos";
+const pageTitle = "Faltapoco.com | Contadores para todo";
 const description =
-  "Mirá cuánto falta para los próximos eventos del mundo: el Mundial 2026, los Juegos Olímpicos, Navidad, Año Nuevo y más. Contadores en tiempo real actualizados al segundo.";
+  "Mirá cuánto falta para los próximos eventos del mundo: el Mundial FIFA, los Juegos Olímpicos, Navidad, Año Nuevo y más. Contadores en tiempo real actualizados al segundo.";
 const url = "https://faltapoco.com";
 const image = "https://faltapoco.com/og/faltapoco.png";
 ---
@@ -19,7 +28,7 @@ const image = "https://faltapoco.com/og/faltapoco.png";
   <Fragment slot="head">
     <!-- Meta SEO -->
     <meta name="description" content={description} />
-    <meta name="keywords" content="cuánto falta, faltapoco, contador de eventos, mundial 2026, olimpiadas 2028, navidad, año nuevo" />
+    <meta name="keywords" content="cuánto falta, faltapoco, contador de eventos, mundial fifa, olimpiadas, navidad, año nuevo" />
     <link rel="canonical" href={url} />
 
     <!-- Open Graph -->

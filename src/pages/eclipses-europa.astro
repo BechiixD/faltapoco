@@ -1,30 +1,29 @@
 ---
-// src/pages/mundial-2026.astro
 import Layout from "../Layouts/Layout.astro";
 import { calcTimeLeft } from "../utils/calcTimeLeft";
-const targetIso = "2026-06-08T00:00:00Z";
+const targetIso = "2026-08-12T00:00:00Z";
 const initial = calcTimeLeft(targetIso);
 
 // Fecha en formato legible
-const mundialDate = new Date(targetIso);
-const day = mundialDate.getUTCDate();
-const month = mundialDate.toLocaleString("es-ES", { month: "long" });
-const year = mundialDate.getUTCFullYear();
+const eclipseDate = new Date(targetIso);
+const day = eclipseDate.getUTCDate();
+const month = eclipseDate.toLocaleString("es-ES", { month: "long" });
+const year = eclipseDate.getUTCFullYear();
 const daysLeft = initial.days;
 
-const pageTitle = "¿Cuánto falta para el Mundial 2026? | Faltapoco.com";
+const pageTitle = "¿Cuánto falta para el Eclipse Total de Sol 2026? Contador y fecha exacta | Faltapoco.com";
 const description =
-    "Descubre exactamente cuántos días, horas y minutos faltan para el Mundial 2026. Contador en tiempo real, fecha oficial de inicio y curiosidades sobre el torneo.";
+    "Descubre exactamente cuántos días, horas y minutos faltan para el Eclipse Total de Sol 2026. Contador en tiempo real y fecha exacta del evento astronómico en España y Europa.";
 
-const url = "https://faltapoco.com/mundial-2026";
-const image = "https://faltapoco.com/og/mundial-2026.png";
+const url = "https://faltapoco.com/eclipses-europa";
+const image = "https://faltapoco.com/og/eclipse-2026.png";
 ---
 
-<Layout title="Mundial 2026">
+<Layout title="Eclipse Total de Sol 2026">
     <Fragment slot="head">
     <!-- Meta SEO -->
     <meta name="description" content={description} />
-    <meta name="keywords" content="mundial 2026, fifa world cup 2026, cuanto falta para el mundial, faltapoco, contador mundial" />
+    <meta name="keywords" content="eclipse total de sol 2026, eclipse solar europa, eclipse españa, cuanto falta para el eclipse, faltapoco, contador eclipse" />
     <link rel="canonical" href={url} />
 
     <!-- Open Graph -->
@@ -69,7 +68,7 @@ const image = "https://faltapoco.com/og/mundial-2026.png";
                     class="bg-gradient-to-r from-[#0B5FFF] via-gray-400 to-[#0B5FFF] bg-clip-text text-transparent animate-gradient"
                     style="display: inline-block;"
                 >
-                    Mundial 2026
+                    Eclipse Total de Sol 2026
                 </span>?
             </h1>
         </div>
@@ -97,7 +96,7 @@ const image = "https://faltapoco.com/og/mundial-2026.png";
                 <div
                     class="text-lg sm:text-xl md:text-2xl text-[#FFDD00] font-semibold"
                 >
-                    El mundial comienza el día {day} de {month} de {year}.
+                    El eclipse total de sol será el día {day} de {month} de {year}.
                 </div>
                 <div
                     class="mt-4 sm:mt-4 text-4xl sm:text-6xl md:text-8xl text-[#0B5FFF] font-mono"
@@ -110,7 +109,10 @@ const image = "https://faltapoco.com/og/mundial-2026.png";
                     }m {String(initial.seconds).padStart(2, "0")}s
                 </div>
                 <div class="mt-4 text-base sm:text-lg text-gray-600">
-                    Faltan {daysLeft} días para el mundial.
+                    Faltan {daysLeft} días para el eclipse total de sol.
+                </div>
+                <div class="mt-4 text-base sm:text-lg text-gray-600">
+                    Será visible principalmente desde España y Europa.
                 </div>
             </div>
         </div>
