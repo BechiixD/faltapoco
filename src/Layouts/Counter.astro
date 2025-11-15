@@ -1,30 +1,30 @@
 ---
-// src/pages/navidad.astro
-import Layout from "../Layouts/Layout.astro";
+import Layout from "./Layout.astro";
 import { calcTimeLeft } from "../utils/calcTimeLeft";
-const targetIso = "2025-12-25T00:00:00Z";
+
+const targetIso = "2026-06-11T00:00:00Z";
 const initial = calcTimeLeft(targetIso);
 
 // Fecha en formato legible
-const navidadDate = new Date(targetIso);
-const day = navidadDate.getUTCDate();
-const month = navidadDate.toLocaleString("es-ES", { month: "long" });
-const year = navidadDate.getUTCFullYear();
+const mundialDate = new Date(targetIso);
+const day = mundialDate.getUTCDate();
+const month = mundialDate.toLocaleString("es-ES", { month: "long" });
+const year = mundialDate.getUTCFullYear();
 const daysLeft = initial.days;
 
-const pageTitle = "¿Cuánto falta para Navidad 2025? | Faltapoco.com";
+const pageTitle = "¿Cuánto falta para el Mundial FIFA 2026? Contador y fecha exacta | Faltapoco.com";
 const description =
-    "Descubre exactamente cuántos días, horas y minutos faltan para Navidad 2025. Contador en tiempo real, fecha oficial y curiosidades sobre la celebración.";
+    "Descubre exactamente cuántos días, horas y minutos faltan para el Mundial FIFA 2026. Contador en tiempo real y fecha exacta del inicio.";
 
-const url = "https://faltapoco.com/navidad-2025";
-const image = "https://faltapoco.com/og/navidad-2025.png";
+const url = "https://faltapoco.com/mundial-2026";
+const image = "https://faltapoco.com/og/mundial-2026.png";
 ---
 
-<Layout title="¿Cuánto falta para Navidad 2025? | Faltapoco.com">
+<Layout title="¿Cuánto falta para el Mundial 2026? | Faltapoco.com">
     <Fragment slot="head">
     <!-- Meta SEO -->
     <meta name="description" content={description} />
-    <meta name="keywords" content="navidad 2025, cuanto falta para navidad, faltapoco, contador navidad" />
+    <meta name="keywords" content="mundial 2026, fifa world cup 2026, cuanto falta para el mundial, faltapoco, contador mundial" />
     <link rel="canonical" href={url} />
 
     <!-- Open Graph -->
@@ -42,7 +42,7 @@ const image = "https://faltapoco.com/og/navidad-2025.png";
     <meta name="twitter:image" content={image} />
 
     <!-- Schema.org (JSON-LD) -->
-    <script type="application/ld+json" is:inline>
+    <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -64,12 +64,12 @@ const image = "https://faltapoco.com/og/navidad-2025.png";
     >
         <div class="flex flex-col items-center w-full space-y-4">
             <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-2">
-                ¿Cuánto tiempo falta para
+                ¿Cuánto tiempo falta para el
                 <span
                     class="bg-gradient-to-r from-[#0B5FFF] via-gray-400 to-[#0B5FFF] bg-clip-text text-transparent animate-gradient"
                     style="display: inline-block;"
                 >
-                    Navidad 2025
+                    Mundial FIFA 2026
                 </span>?
             </h1>
         </div>
@@ -97,7 +97,7 @@ const image = "https://faltapoco.com/og/navidad-2025.png";
                 <div
                     class="text-lg sm:text-xl md:text-2xl text-[#FFDD00] font-semibold"
                 >
-                    La navidad es el día {day} de {month} de {year}.
+                    El mundial comienza el día {day} de {month} de {year}.
                 </div>
                 <div
                     class="mt-4 sm:mt-4 text-4xl sm:text-6xl md:text-8xl text-[#0B5FFF] font-mono"
@@ -110,17 +110,21 @@ const image = "https://faltapoco.com/og/navidad-2025.png";
                     }m {String(initial.seconds).padStart(2, "0")}s
                 </div>
                 <div class="mt-4 text-base sm:text-lg text-gray-600">
-                    Faltan {daysLeft} días para navidad.
+                    Faltan {daysLeft} días para el mundial.
+                </div>
+                <div class="mt-4 text-base sm:text-lg text-gray-600">
+                    Se llevara a cabo en Estados Unidos, México y Canadá.
                 </div>
             </div>
         </div>
 
-        <script type="module" src="/js/countdown.js" is:inline></script>
-        <script type="module" is:inline>
+        <script type="module" src="/js/countdown.js"></script>
+        <script type="module">
             import { initCountdown } from "/js/countdown.js";
             // inicializa todos los [data-countdown]
             initCountdown();
         </script>
+        </section>
             <section class="text-center max-w-2xl mx-auto mt-6 text-gray-700 leading-relaxed">
                 <p>
                     Pronto podrás integrar este contador en tu propia página o proyecto.
