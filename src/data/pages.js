@@ -41,9 +41,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para el iPhone 18? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para el lanzamiento del iPhone 18. Fecha estimada: otoño de 2026 (septiembre u octubre). Contador en tiempo real.",
             keywords: "iphone 18, lanzamiento iphone, cuanto falta para el iphone, faltapoco, contador iphone",
-            url: "https://faltapoco.com/iphone-18",
+            url: "https://faltapoco.com/proximo-iphone-lanzamiento",
             slug: "proximo-iphone-lanzamiento",
-            image: "https://faltapoco.com/og/iphone-18.png",
+            image: "https://faltapoco.com/og/proximo-iphone-lanzamiento.png",
         },
         content: {
             title: "Lanzamiento del iPhone 18",
@@ -294,7 +294,7 @@ export const pages = {
     },
 
     eurocopa: {
-        date: { targetIso: "2028-06-9T00:00:00Z" },
+        date: { targetIso: "2028-06-09T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para la Eurocopa 2028? | Faltapoco.com",
             description: "Contador en tiempo real para el inicio de la Eurocopa 2028. Fechas y detalles del torneo continental.",
