@@ -21,7 +21,7 @@ import { pages } from "../data/pages.js";
 // Obtiene la lista de eventos a partir de las claves de pages.js
 const eventos = Object.entries(pages).map(([key, value]) => ({
   nombre: value.content?.title || key,
-  url: `/${value.meta?.slug || key}`
+  url: value.meta?.url || `/${key}`
 }));
 
 const pageTitle = "Faltapoco.com | Contadores para todo";

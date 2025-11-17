@@ -7,7 +7,6 @@ import fs from "fs/promises";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const pagesFilePath = join(__dirname, "..", "src", "data", "pages.js");
-const pagesDir = join(__dirname, "..", "src", "pages");
 
 const app = express();
 
@@ -87,32 +86,7 @@ app.post("/api/pages", async (req, res) => {
         // Write the updated content back to the file
         await fs.writeFile(pagesFilePath, newFileContent, "utf-8");
         
-        // Create the .astro file
-        const astroFileName = `${meta.slug}.astro`;
-        const astroFilePath = join(pagesDir, astroFileName);
-        
-        // Check if file already exists
-        try {
-            await fs.access(astroFilePath);
-            return res.status(400).json({ message: `Astro file ${astroFileName} already exists` });
-        } catch {
-            // File doesn't exist, which is good
-        }
-        
-        // Generate the .astro file content
-        const astroContent = `---
-import Counter from "../Layouts/Counter.astro";
-import { pages } from "../data/pages.js";
-const { date, meta, content } = pages.${key};
----
-
-<Counter date={date} meta={meta} content={content} />
-`;
-        
-        // Write the .astro file
-        await fs.writeFile(astroFilePath, astroContent, "utf-8");
-        
-        res.json({ message: "Page added successfully", key, astroFile: astroFileName });
+        res.json({ message: "Page added successfully", key });
     } catch (error) {
         console.error("Error adding page:", error);
         res.status(500).json({ message: "Error adding page", error: error.message });
