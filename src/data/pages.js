@@ -5,9 +5,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para el Mundial 2026? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para el Mundial FIFA 2026. Contador en tiempo real y fecha exacta del inicio.",
             keywords: "mundial 2026, fifa world cup 2026, cuanto falta para el mundial, faltapoco, contador mundial",
-            url: "https://faltapoco.com/mundial-2026",
+            url: "https://faltapoco.com/mundial",
             slug: "mundial",
-            image: "https://faltapoco.com/og/mundial-2026.png",
+            image: "https://faltapoco.com/og/mundial.png",
         },
         content: {
             title: "Mundial FIFA 2026",
@@ -25,7 +25,7 @@ export const pages = {
             keywords: "league of legends worlds 2026, lol world championship, worlds final, cuanto falta para worlds, faltapoco, contador worlds",
             url: "https://faltapoco.com/lol-world-championship",
             slug: "lol-world-championship",
-            image: "https://faltapoco.com/og/worlds-2026.png",
+            image: "https://faltapoco.com/og/worlds.png",
         },
         content: {
             title: "League of Legends Worlds 2026",
@@ -115,7 +115,7 @@ export const pages = {
             keywords: "eclipse anular 2027, eclipse latinoamérica, cuanto falta para el eclipse, faltapoco, contador eclipse",
             url: "https://faltapoco.com/eclipses-latinoamerica",
             slug: "eclipses-latinoamerica",
-            image: "https://faltapoco.com/og/eclipse-anular-2027.png",
+            image: "https://faltapoco.com/og/eclipse-anular.png",
         },
         content: {
             title: "Eclipse Anular 2027",
@@ -131,9 +131,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para los Juegos Olímpicos 2028? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para los Juegos Olímpicos de Los Ángeles 2028. Contador en tiempo real y fecha exacta de inicio.",
             keywords: "juegos olímpicos 2028, los angeles 2028, cuanto falta para los juegos olímpicos, faltapoco, contador olímpicos",
-            url: "https://faltapoco.com/juegos-olimpicos-2028",
+            url: "https://faltapoco.com/juegos-olimpicos",
             slug: "juegos-olimpicos",
-            image: "https://faltapoco.com/og/juegos-olimpicos-2028.png",
+            image: "https://faltapoco.com/og/juegos-olimpicos.png",
         },
         content: {
             title: "Juegos Olímpicos LA 2028",
@@ -149,9 +149,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para Navidad 2025? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para Navidad 2025. Contador en tiempo real, fecha oficial y curiosidades sobre la celebración.",
             keywords: "navidad 2025, cuanto falta para navidad, faltapoco, contador navidad",
-            url: "https://faltapoco.com/navidad-2025",
+            url: "https://faltapoco.com/navidad",
             slug: "navidad",
-            image: "https://faltapoco.com/og/navidad-2025.png",
+            image: "https://faltapoco.com/og/navidad.png",
         },
         content: {
             title: "Navidad 2025",
@@ -187,7 +187,7 @@ export const pages = {
             keywords: "eclipse total de sol 2026, eclipse solar europa, eclipse españa, cuanto falta para el eclipse, faltapoco, contador eclipse",
             url: "https://faltapoco.com/eclipses-europa",
             slug: "eclipses-europa",
-            image: "https://faltapoco.com/og/eclipse-2026.png",
+            image: "https://faltapoco.com/og/eclipse.png",
         },
         content: {
             title: "Eclipse Total de Sol 2026",
@@ -206,7 +206,7 @@ export const pages = {
             keywords: "halloween, cuanto falta halloween, disfraz halloween, faltapoco, contador halloween",
             url: "https://faltapoco.com/halloween",
             slug: "halloween",
-            image: "https://faltapoco.com/og/halloween-2026.png",
+            image: "https://faltapoco.com/og/halloween.png",
         },
         content: {
             title: "Halloween",
@@ -225,7 +225,7 @@ export const pages = {
             keywords: "san valentín, cuanto falta san valentín, 14 de febrero, faltapoco, contador san valentín",
             url: "https://faltapoco.com/san-valentin",
             slug: "san-valentin",
-            image: "https://faltapoco.com/og/san-valentin-2026.png",
+            image: "https://faltapoco.com/og/san-valentin.png",
         },
         content: {
             title: "San Valentín",
@@ -244,7 +244,7 @@ export const pages = {
             keywords: "año nuevo chino, año lunar, cuanto falta año nuevo chino, faltapoco, contador china",
             url: "https://faltapoco.com/año-nuevo-chino",
             slug: "año-nuevo-chino",
-            image: "https://faltapoco.com/og/año-nuevo-chino-2026.png",
+            image: "https://faltapoco.com/og/año-nuevo-chino.png",
         },
         content: {
             title: "Año Nuevo Chino",
@@ -263,7 +263,7 @@ export const pages = {
             keywords: "cyber monday 2026, ofertas online, cuanto falta cyber monday, faltapoco, contador cyber monday",
             url: "https://faltapoco.com/cyber-monday",
             slug: "cyber-monday",
-            image: "https://faltapoco.com/og/cyber-monday-2026.png",
+            image: "https://faltapoco.com/og/cyber-monday.png",
         },
         content: {
             title: "Cyber Monday",
@@ -282,7 +282,7 @@ export const pages = {
             keywords: "día de la madre, cuanto falta dia de la madre, faltapoco, contador dia de la madre",
             url: "https://faltapoco.com/dia-de-la-madre",
             slug: "dia-de-la-madre",
-            image: "https://faltapoco.com/og/dia-de-la-madre-2026.png",
+            image: "https://faltapoco.com/og/dia-de-la-madre.png",
         },
         content: {
             title: "Día de la Madre",
@@ -299,9 +299,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para la Eurocopa 2028? | Faltapoco.com",
             description: "Contador en tiempo real para el inicio de la Eurocopa 2028. Fechas y detalles del torneo continental.",
             keywords: "eurocopa 2028, cuanto falta eurocopa, europe championship 2028, faltapoco, contador eurocopa",
-            url: "https://faltapoco.com/eurocopa-2028",
+            url: "https://faltapoco.com/eurocopa",
             slug: "eurocopa",
-            image: "https://faltapoco.com/og/eurocopa-2028.png",
+            image: "https://faltapoco.com/og/eurocopa.png",
         },
         content: {
             title: "Eurocopa 2028",
@@ -318,9 +318,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para la Copa América 2028? | Faltapoco.com",
             description: "Contador para la Copa América 2028. Sigue la cuenta regresiva y entérate de las fechas del torneo.",
             keywords: "copa américa 2028, cuanto falta copa america, faltapoco, contador copa america",
-            url: "https://faltapoco.com/copa-america-2028",
+            url: "https://faltapoco.com/copa-america",
             slug: "copa-america",
-            image: "https://faltapoco.com/og/copa-america-2028.png",
+            image: "https://faltapoco.com/og/copa-america.png",
         },
         content: {
             title: "Copa América 2028",
@@ -339,7 +339,7 @@ export const pages = {
             keywords: "super bowl 2026, cuanto falta super bowl, final nfl, faltapoco, contador super bowl",
             url: "https://faltapoco.com/super-bowl",
             slug: "super-bowl",
-            image: "https://faltapoco.com/og/super-bowl-2026.png",
+            image: "https://faltapoco.com/og/super-bowl.png",
         },
         content: {
             title: "Super Bowl",
@@ -358,7 +358,7 @@ export const pages = {
             keywords: "champions league final, cuanto falta champions, final uefa, faltapoco, contador champions",
             url: "https://faltapoco.com/champions-final",
             slug: "champions-final",
-            image: "https://faltapoco.com/og/champions-final-2026.png",
+            image: "https://faltapoco.com/og/champions-final.png",
         },
         content: {
             title: "Final de la Champions League",
@@ -377,7 +377,7 @@ export const pages = {
             keywords: "the international 2026, dota2 ti, cuanto falta the international, faltapoco, contador ti",
             url: "https://faltapoco.com/the-international",
             slug: "the-international",
-            image: "https://faltapoco.com/og/the-international-2026.png",
+            image: "https://faltapoco.com/og/the-international.png",
         },
         content: {
             title: "The International (Dota 2)",
@@ -415,7 +415,7 @@ export const pages = {
             keywords: "minecraft live 2026, cuanto falta minecraft live, minecraft event, faltapoco, contador minecraft",
             url: "https://faltapoco.com/minecraft-live",
             slug: "minecraft-live",
-            image: "https://faltapoco.com/og/minecraft-live-2026.png",
+            image: "https://faltapoco.com/og/minecraft-live.png",
         },
         content: {
             title: "Minecraft Live",
@@ -434,7 +434,7 @@ export const pages = {
             keywords: "google io 2026, cuanto falta google io, google conference, faltapoco, contador google io",
             url: "https://faltapoco.com/google-io",
             slug: "google-io",
-            image: "https://faltapoco.com/og/google-io-2026.png",
+            image: "https://faltapoco.com/og/google-io.png",
         },
         content: {
             title: "Google I/O",
@@ -451,9 +451,9 @@ export const pages = {
             pageTitle: "¿Cuánto falta para el inicio del verano 2026? | Faltapoco.com",
             description: "Contador para el inicio de estaciones (comienzo del verano en Hemisferio Sur). Fechas astronómicas precisas.",
             keywords: "inicio verano 2026, comienzo de estaciones, cuanto falta verano, faltapoco, contador estaciones",
-            url: "https://faltapoco.com/inicio-verano-2026",
+            url: "https://faltapoco.com/inicio-verano",
             slug: "inicio-verano",
-            image: "https://faltapoco.com/og/inicio-verano-2026.png",
+            image: "https://faltapoco.com/og/inicio-verano.png",
         },
         content: {
             title: "Inicio del Verano (Hem. Sur)",
@@ -472,7 +472,7 @@ export const pages = {
             keywords: "lollapalooza 2026, cuanto falta lollapalooza, festival musica, faltapoco, contador lollapalooza",
             url: "https://faltapoco.com/lollapalooza",
             slug: "lollapalooza",
-            image: "https://faltapoco.com/og/lollapalooza-2026.png",
+            image: "https://faltapoco.com/og/lollapalooza.png",
         },
         content: {
             title: "Lollapalooza",
@@ -491,7 +491,7 @@ export const pages = {
             keywords: "copa libertadores 2026, final copa libertadores, cuanto falta libertadores, faltapoco, contador libertadores",
             url: "https://faltapoco.com/copa-libertadores-final",
             slug: "copa-libertadores-final",
-            image: "https://faltapoco.com/og/copa-libertadores-2026.png",
+            image: "https://faltapoco.com/og/copa-libertadores.png",
         },
         content: {
             title: "Final de la Copa Libertadores",
@@ -510,7 +510,7 @@ export const pages = {
             keywords: "steam summer sale 2026, steam ofertas verano, cuanto falta steam sale, faltapoco, contador steam",
             url: "https://faltapoco.com/steam-summer-sale",
             slug: "steam-summer-sale",
-            image: "https://faltapoco.com/og/steam-summer-sale-2026.png",
+            image: "https://faltapoco.com/og/steam-summer-sale.png",
         },
         content: {
             title: "Steam Summer Sale",
@@ -529,7 +529,7 @@ export const pages = {
             keywords: "hot sale 2026, hot sale argentina, cuanto falta hot sale, faltapoco, contador hot sale",
             url: "https://faltapoco.com/hot-sale-argentina",
             slug: "hot-sale-argentina",
-            image: "https://faltapoco.com/og/hot-sale-2026.png",
+            image: "https://faltapoco.com/og/hot-sale.png",
         },
         content: {
             title: "Hot Sale Argentina",
@@ -548,7 +548,7 @@ export const pages = {
             keywords: "dia del niño 2026, cuanto falta dia del niño, regalos dia del niño, faltapoco, contador dia del niño",
             url: "https://faltapoco.com/dia-del-nino",
             slug: "dia-del-nino",
-            image: "https://faltapoco.com/og/dia-del-nino-2026.png",
+            image: "https://faltapoco.com/og/dia-del-nino.png",
         },
         content: {
             title: "Día del Niño",
@@ -567,7 +567,7 @@ export const pages = {
             keywords: "steam winter sale 2026, steam ofertas invierno, cuanto falta steam winter sale, faltapoco, contador steam winter",
             url: "https://faltapoco.com/steam-winter-sale",
             slug: "steam-winter-sale",
-            image: "https://faltapoco.com/og/steam-winter-sale-2026.png",
+            image: "https://faltapoco.com/og/steam-winter-sale.png",
         },
         content: {
             title: "Steam Winter Sale",
