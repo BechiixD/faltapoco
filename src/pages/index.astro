@@ -2,20 +2,27 @@
 import Layout from "../Layouts/Layout.astro";
 import "../styles/global.css";
 
-const eventos = [
-  { nombre: "Mundial 2026", url: "/mundial" },
-  { nombre: "Black Friday", url: "/black-friday" },
-  { nombre: "Navidad", url: "/navidad" },
-  { nombre: "Año Nuevo", url: "/año-nuevo" },
-  { nombre: "Juegos Olímpicos 2028", url: "/juegos-olimpicos" },
-  { nombre: "Lanzamiento del iPhone 18", url: "/proximo-iphone-lanzamiento" },
-  { nombre: "League of Legends Worlds 2026", url: "/lol-world-championship" },
-  { nombre: "Semana Santa 2026", url: "/semana-santa" },
-  { nombre: "Día de Reyes Magos 2026", url: "/reyes-magos" },
-  { nombre: "Eclipse Total de Sol 2026", url: "/eclipses-europa" },
-  { nombre: "Eclipse Anular 2027 (Latinoamérica)", url: "/eclipses-latinoamerica" },
+// const eventos = [
+//   { nombre: "Mundial 2026", url: "/mundial" },
+//   { nombre: "Black Friday", url: "/black-friday" },
+//   { nombre: "Navidad", url: "/navidad" },
+//   { nombre: "Año Nuevo", url: "/año-nuevo" },
+//   { nombre: "Juegos Olímpicos 2028", url: "/juegos-olimpicos" },
+//   { nombre: "Lanzamiento del iPhone 18", url: "/proximo-iphone-lanzamiento" },
+//   { nombre: "League of Legends Worlds 2026", url: "/lol-world-championship" },
+//   { nombre: "Semana Santa 2026", url: "/semana-santa" },
+//   { nombre: "Día de Reyes Magos 2026", url: "/reyes-magos" },
+//   { nombre: "Eclipse Total de Sol 2026", url: "/eclipses-europa" },
+//   { nombre: "Eclipse Anular 2027 (Latinoamérica)", url: "/eclipses-latinoamerica" },
+// ];
+// Importa el objeto de páginas
+import { pages } from "../data/pages.js";
 
-];
+// Obtiene la lista de eventos a partir de las claves de pages.js
+const eventos = Object.entries(pages).map(([key, value]) => ({
+  nombre: value.content?.title || key,
+  url: `/${value.meta?.slug || key}`
+}));
 
 const pageTitle = "Faltapoco.com | Contadores para todo";
 const description =

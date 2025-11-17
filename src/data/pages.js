@@ -196,5 +196,5 @@ export const pages = {
             timeLeft: "para el Eclipse Total de Sol 2026",
             info: ["Visible en España y Europa."],
         }
-    }
+    },
 }
