@@ -293,7 +293,7 @@ export const pages = {
         }
     },
 
-    eurocopa2028: {
+    eurocopa: {
         date: { targetIso: "2028-06-9T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para la Eurocopa 2028? | Faltapoco.com",
