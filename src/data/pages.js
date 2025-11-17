@@ -313,7 +313,7 @@ export const pages = {
     },
 
     copaAmerica2028: {
-        date: { targetIso: "2028-06-1T00:00:00Z" },
+        date: { targetIso: "2028-06-01T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para la Copa América 2028? | Faltapoco.com",
             description: "Contador para la Copa América 2028. Sigue la cuenta regresiva y entérate de las fechas del torneo.",
