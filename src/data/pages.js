@@ -53,15 +53,15 @@ export const pages = {
             info: ["Apple suele lanzar nuevos modelos en otoño."],
         }
     },
-    anoNuevo: {
+    añoNuevo: {
         date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },
         meta: {
             pageTitle: "¿Cuánto falta para Año Nuevo? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para Año Nuevo. Contador en tiempo real y fecha exacta del inicio.",
             keywords: "año nuevo, cuanto falta para año nuevo, faltapoco, contador año nuevo",
-            url: "https://faltapoco.com/ano-nuevo",
+            url: "https://faltapoco.com/año-nuevo",
             slug: "año-nuevo",
-            image: "https://faltapoco.com/og/ano-nuevo.png",
+            image: "https://faltapoco.com/og/año-nuevo.png",
         },
         content: {
             title: "Año Nuevo",
@@ -236,15 +236,15 @@ export const pages = {
         }
     },
 
-    anoNuevoChino: {
+    añoNuevoChino: {
         date: { targetIso: "2026-02-17T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para el Año Nuevo Chino? | Faltapoco.com",
             description: "Contador para el Año Nuevo Chino (festividades y calendario lunar). Averigua la fecha exacta y cuenta regresiva.",
             keywords: "año nuevo chino, año lunar, cuanto falta año nuevo chino, faltapoco, contador china",
-            url: "https://faltapoco.com/ano-nuevo-chino",
-            slug: "ano-nuevo-chino",
-            image: "https://faltapoco.com/og/ano-nuevo-chino-2026.png",
+            url: "https://faltapoco.com/año-nuevo-chino",
+            slug: "año-nuevo-chino",
+            image: "https://faltapoco.com/og/año-nuevo-chino-2026.png",
         },
         content: {
             title: "Año Nuevo Chino",
@@ -300,7 +300,7 @@ export const pages = {
             description: "Contador en tiempo real para el inicio de la Eurocopa 2028. Fechas y detalles del torneo continental.",
             keywords: "eurocopa 2028, cuanto falta eurocopa, europe championship 2028, faltapoco, contador eurocopa",
             url: "https://faltapoco.com/eurocopa-2028",
-            slug: "eurocopa-2028",
+            slug: "eurocopa",
             image: "https://faltapoco.com/og/eurocopa-2028.png",
         },
         content: {
@@ -319,7 +319,7 @@ export const pages = {
             description: "Contador para la Copa América 2028. Sigue la cuenta regresiva y entérate de las fechas del torneo.",
             keywords: "copa américa 2028, cuanto falta copa america, faltapoco, contador copa america",
             url: "https://faltapoco.com/copa-america-2028",
-            slug: "copa-america-2028",
+            slug: "copa-america",
             image: "https://faltapoco.com/og/copa-america-2028.png",
         },
         content: {
@@ -445,33 +445,14 @@ export const pages = {
         }
     },
 
-    defcon: {
-        date: { targetIso: "2026-28-03T00:00:00Z" },
-        meta: {
-            pageTitle: "¿Cuánto falta para DEF CON? | Faltapoco.com",
-            description: "Contador para Black Hat y DEFCON: conferencias de seguridad informática y eventos asociados.",
-            keywords: "black hat 2026, def con 2026, cuanto falta black hat, faltapoco, contador seguridad",
-            url: "https://faltapoco.com/defcon",
-            slug: "defcon",
-            image: "https://faltapoco.com/og/defcon-2026.png",
-        },
-        content: {
-            title: "DEF CON",
-            connector: "el",
-            whatWhen: "DEF CON se realiza el",
-            timeLeft: "para DEF CON",
-            info: ["Conferencias top de seguridad informática.", "Atraen profesionales y entusiastas de ciberseguridad.", "Es hasta el 30 de marzo del 2026."],
-        }
-    },
-
     inicioEstacion: {
         date: { targetIso: "2026-12-21T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el inicio del verano? | Faltapoco.com",
+            pageTitle: "¿Cuánto falta para el inicio del verano 2026? | Faltapoco.com",
             description: "Contador para el inicio de estaciones (comienzo del verano en Hemisferio Sur). Fechas astronómicas precisas.",
             keywords: "inicio verano 2026, comienzo de estaciones, cuanto falta verano, faltapoco, contador estaciones",
             url: "https://faltapoco.com/inicio-verano-2026",
-            slug: "inicio-verano-2026",
+            slug: "inicio-verano",
             image: "https://faltapoco.com/og/inicio-verano-2026.png",
         },
         content: {
