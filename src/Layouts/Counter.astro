@@ -23,6 +23,50 @@ const description = meta.description;
 const keywords = meta.keywords;
 const url = meta.url;
 const image = meta.image;
+
+// Schema.org structured data URLs
+const canonicalURL = new URL(url);
+const siteURL = new URL("/", canonicalURL);
+const webSiteSchema = new URL("/#/schema/WebSite", canonicalURL);
+const organizationSchema = new URL("/#/schema/Organization", canonicalURL);
+
+// Structured data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": webSiteSchema.toString(),
+      name: "Faltapoco.com",
+      description: "Contadores en tiempo real para eventos importantes. Descubrí cuánto falta para el Mundial, Navidad, Año Nuevo y más.",
+      url: siteURL.toString(),
+      inLanguage: "es",
+      publisher: {
+        "@type": "Organization",
+        "@id": organizationSchema.toString(),
+        name: "Faltapoco",
+        url: siteURL.toString(),
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": canonicalURL.toString(),
+      url: canonicalURL.toString(),
+      name: pageTitle,
+      headline: pageTitle,
+      description: description,
+      image: image,
+      inLanguage: "es",
+      isPartOf: {
+        "@id": webSiteSchema.toString(),
+      },
+      publisher: {
+        "@type": "Organization",
+        "@id": organizationSchema.toString(),
+      }
+    }
+  ]
+};
 ---
 
 <Layout title={pageTitle}>
@@ -47,22 +91,7 @@ const image = meta.image;
     <meta name="twitter:image" content={image} />
 
     <!-- Schema.org (JSON-LD) -->
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        name: pageTitle,
-        description,
-        url,
-        image,
-        inLanguage: "es",
-        publisher: {
-          "@type": "Organization",
-          name: "Faltapoco",
-          url: "https://faltapoco.com"
-        }
-      })}
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </Fragment>
     <main
         class="flex flex-col items-center justify-center flex-grow px-4 py-8 space-y-12 text-center md:gap-16"
