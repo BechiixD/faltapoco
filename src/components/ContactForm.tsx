@@ -7,7 +7,7 @@ const ContactForm = ({ accessKey }) => {
     async function handleSubmit(e) {
         e.preventDefault();
         setSending(true);
-        setResult("Sending...");
+        setResult("Enviando...");
 
         const form = e.target;
         const formData = new FormData(form);
@@ -21,10 +21,10 @@ const ContactForm = ({ accessKey }) => {
             const data = await response.json();
 
             if (response.ok && data.success) {
-                setResult("Form Submitted Successfully ✅");
+                setResult("¡Formulario enviado correctamente! ✅");
                 form.reset();
             } else {
-                throw new Error("API returned error");
+                throw new Error("La API devolvió un error");
             }
         } catch {
             setResult("Error ❌");
@@ -36,11 +36,11 @@ const ContactForm = ({ accessKey }) => {
     return (
         <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
+                <label className="block text-sm font-medium mb-2">Nombre</label>
                 <input name="name" required className="w-full rounded-xl border px-3 py-2" />
             </div>
             <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label className="block text-sm font-medium mb-2">Correo electrónico</label>
                 <input
                     name="email"
                     type="email"
@@ -49,11 +49,11 @@ const ContactForm = ({ accessKey }) => {
                 />
             </div>
             <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+                <label className="block text-sm font-medium mb-2">Mensaje</label>
                 <textarea
                     name="message"
                     required
-                    rows="5"
+                    rows={5}
                     className="w-full rounded-xl border px-3 py-2"
                 ></textarea>
             </div>
@@ -62,7 +62,7 @@ const ContactForm = ({ accessKey }) => {
                 disabled={sending}
                 className="w-full rounded-full bg-blue-600 text-white py-3 font-semibold hover:bg-blue-700 transition"
             >
-                {sending ? "Sending..." : "Send Message"}
+                {sending ? "Enviando..." : "Enviar mensaje"}
             </button>
             {result && <p className="text-center text-sm mt-2">{result}</p>}
         </form>
