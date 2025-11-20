@@ -56,7 +56,7 @@ app.post("/api/pages", async (req, res) => {
         for (const [pageKey, page] of Object.entries(currentPages)) {
             newFileContent += `    ${pageKey}: {\n`;
             
-            // Special handling for añoNuevo dynamic date
+            // Special handling for anoNuevo dynamic date
             if (pageKey === "anoNuevo") {
                 newFileContent += "        date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },\n";
             } else {

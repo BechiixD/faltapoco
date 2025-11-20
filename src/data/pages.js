@@ -53,15 +53,15 @@ export const pages = {
             info: ["Apple suele lanzar nuevos modelos en otoño."],
         }
     },
-    añoNuevo: {
+    anoNuevo: {
         date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },
         meta: {
             pageTitle: "¿Cuánto falta para Año Nuevo? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para Año Nuevo. Contador en tiempo real y fecha exacta del inicio.",
             keywords: "año nuevo, cuanto falta para año nuevo, faltapoco, contador año nuevo",
-            url: "https://faltapoco.com/año-nuevo",
-            slug: "año-nuevo",
-            image: "https://faltapoco.com/og/año-nuevo.png",
+            url: "https://faltapoco.com/ano-nuevo",
+            slug: "ano-nuevo",
+            image: "https://faltapoco.com/og/ano-nuevo.png",
         },
         content: {
             title: "Año Nuevo",
@@ -236,15 +236,15 @@ export const pages = {
         }
     },
 
-    añoNuevoChino: {
+    anoNuevoChino: {
         date: { targetIso: "2026-02-17T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para el Año Nuevo Chino? | Faltapoco.com",
             description: "Contador para el Año Nuevo Chino (festividades y calendario lunar). Averigua la fecha exacta y cuenta regresiva.",
             keywords: "año nuevo chino, año lunar, cuanto falta año nuevo chino, faltapoco, contador china",
-            url: "https://faltapoco.com/año-nuevo-chino",
-            slug: "año-nuevo-chino",
-            image: "https://faltapoco.com/og/año-nuevo-chino.png",
+            url: "https://faltapoco.com/ano-nuevo-chino",
+            slug: "ano-nuevo-chino",
+            image: "https://faltapoco.com/og/ano-nuevo-chino.png",
         },
         content: {
             title: "Año Nuevo Chino",
