@@ -30,22 +30,24 @@ const { title } = Astro.props;
         <slot />
 
         <div class="ad-bottom">
-            <script
-                async
-                data-cfasync="false"
-                src="//pl28100099.effectivegatecpm.com/9024bc1159542df7538b15ed31484c6d/invoke.js"
-            ></script>
             <div id="container-9024bc1159542df7538b15ed31484c6d"></div>
         </div>
 
         <Footer />
         <Analytics />
     </body>
+    <!-- Defer ad scripts to load after page render -->
     <script
-        async
+        defer
+        data-cfasync="false"
+        src="//pl28100099.effectivegatecpm.com/9024bc1159542df7538b15ed31484c6d/invoke.js"
+    ></script>
+    <script
+        defer
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540156536373518"
         crossorigin="anonymous"></script>
     <script
+        defer
         type="text/javascript"
         src="//pl28100082.effectivegatecpm.com/a4/cc/f0/a4ccf0078a603bde1bd0feb50e509c4b.js"
     ></script>
@@ -57,5 +59,29 @@ const { title } = Astro.props;
         display: flex;
         justify-content: center;
         margin: 20px 0;
+        /* Fixed dimensions to prevent CLS - typical ad banner sizes */
+        min-height: 250px;
+        height: 250px;
+        max-height: 250px;
+    }
+    /* Desktop-only fixed dimensions for larger banners */
+    @media (min-width: 768px) {
+        .ad-bottom {
+            min-height: 280px;
+            height: 280px;
+            max-height: 280px;
+        }
+    }
+    #container-9024bc1159542df7538b15ed31484c6d {
+        width: 100%;
+        max-width: 728px;
+        min-height: 90px;
+        height: 90px;
+    }
+    @media (min-width: 768px) {
+        #container-9024bc1159542df7538b15ed31484c6d {
+            min-height: 250px;
+            height: 250px;
+        }
     }
 </style>

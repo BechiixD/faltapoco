@@ -50,12 +50,24 @@
     </nav>
 </header>
 
-<script>
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-
-    btn.addEventListener("click", () => {
-        const isOpen = menu.classList.toggle("hidden");
-        btn.textContent = isOpen ? "☰" : "X";
-    });
+<script is:inline>
+    // Defer menu script execution until DOM is ready
+    (function() {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initMenu);
+        } else {
+            initMenu();
+        }
+        
+        function initMenu() {
+            const btn = document.getElementById("menu-btn");
+            const menu = document.getElementById("menu");
+            if (!btn || !menu) return;
+            
+            btn.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("hidden");
+                btn.textContent = isOpen ? "☰" : "X";
+            });
+        }
+    })();
 </script>
