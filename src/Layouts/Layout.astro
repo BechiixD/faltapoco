@@ -50,6 +50,21 @@ const { title } = Astro.props;
     <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540156536373518"
-        crossorigin="anonymous"
-    ></script>
+        crossorigin="anonymous"></script>
 </html>
+
+<style>
+    .ad-floating {
+        position: fixed;
+        bottom: 20px; /* movelo hacia arriba */
+        right: 20px; /* movelo hacia la izquierda */
+        z-index: 9999;
+    }
+
+    .ad-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0; /* separa del footer */
+    }
+</style>
