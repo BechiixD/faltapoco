@@ -389,11 +389,11 @@ export const pages = {
     },
 
     fortniteSeason: {
-        date: { targetIso: "2026-01-15T00:00:00Z" },
+        date: { targetIso: "2025-11-30T10:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para la próxima temporada de Fortnite? | Faltapoco.com",
             description: "Contador para el inicio de la próxima temporada de Fortnite. Datos de temporada y cuenta regresiva en tiempo real.",
-            keywords: "fortnite season, cuanto falta fortnite season, fortnite temporada, faltapoco, contador fortnite",
+            keywords: "fortnite season, cuanto falta fortnite season, fortnite temporada 7, faltapoco, contador fortnite",
             url: "https://faltapoco.com/fortnite-season",
             slug: "fortnite-season",
             image: "https://faltapoco.com/og/fortnite-season.png",
@@ -403,7 +403,7 @@ export const pages = {
             connector: "la",
             whatWhen: "La nueva temporada de Fortnite comienza el",
             timeLeft: "para la nueva temporada de Fortnite",
-            info: ["Cada temporada trae cambios y eventos in-game.", "Muy buscado por comunidad gaming."],
+            info: ["El dia 29 de noviembre termina la temporada 6.", "Se espera que la temporada 7 comience unos dias despues.", "Es probable que los servidores esten apagados desde 12 hs, hasta un par de dias mientras se actualiza."],
         }
     },
 
