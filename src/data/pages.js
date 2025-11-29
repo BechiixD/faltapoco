@@ -17,6 +17,96 @@ export const pages = {
             info: ["El torneo se jugará en Norteamérica.", "Participan 48 selecciones."],
         }
     },
+    hytale: {
+        date: { targetIso: "2026-01-13T00:00:00Z" },
+        meta: {
+            pageTitle: "¿Cuánto falta para Hytale Early Access? | Faltapoco.com",
+            description: "Cuenta regresiva para el lanzamiento de Hytale Early Access. El acceso anticipado estará disponible el 13 de enero de 2026. Precio desde 20 dólares. Contador en tiempo real.",
+            keywords: "hytale early access, hytale release date, hytale launch, cuanto falta para hytale, hytale precio, hytale 2026, faltapoco, contador hytale, hytale beta, hytale access anticipado",
+            url: "https://faltapoco.com/hytale",
+            slug: "hytale",
+            image: "https://faltapoco.com/og/hytale.png",
+        },
+        content: {
+            title: "Hytale Early Access",
+            connector: "el",
+            whatWhen: "Hytale Early Access estará disponible el",
+            timeLeft: "para Hytale Early Access",
+            info: ["Acceso anticipado disponible desde el 13 de enero de 2026.", "Precio estimado desde 20 dólares.", "Juego de aventura y construcción desarrollado por Hypixel Studios.", "Altamente esperado por la comunidad gaming desde su anuncio."],
+        }
+    },
+    semanaSanta: {
+        date: { targetIso: "2026-04-02T00:00:00Z" },
+        meta: {
+            pageTitle: "¿Cuánto falta para Semana Santa 2026? | Faltapoco.com",
+            description: "Descubre exactamente cuántos días, horas y minutos faltan para Semana Santa 2026. Contador en tiempo real para Jueves Santo y Viernes Santo, y fechas exactas.",
+            keywords: "semana santa 2026, jueves santo, viernes santo, cuanto falta para semana santa, faltapoco, contador semana santa",
+            url: "https://faltapoco.com/semana-santa",
+            slug: "semana-santa",
+            image: "https://faltapoco.com/og/semana-santa.png",
+        },
+        content: {
+            title: "Semana Santa 2026",
+            connector: "",
+            whatWhen: "Semana Santa comienza el",
+            timeLeft: "para Semana Santa 2026",
+            info: ["Celebración religiosa en todo el mundo.", "Se incluyen Jueves y Viernes Santo."],
+        }
+    },
+    anoNuevo: {
+        date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },
+        meta: {
+            pageTitle: "¿Cuánto falta para Año Nuevo? | Faltapoco.com",
+            description: "Descubre exactamente cuántos días, horas y minutos faltan para Año Nuevo. Contador en tiempo real y fecha exacta del inicio.",
+            keywords: "año nuevo, cuanto falta para año nuevo, faltapoco, contador año nuevo",
+            url: "https://faltapoco.com/ano-nuevo",
+            slug: "ano-nuevo",
+            image: "https://faltapoco.com/og/ano-nuevo.png",
+        },
+        content: {
+            title: "Año Nuevo",
+            connector: "el",
+            whatWhen: "Año Nuevo comienza el",
+            timeLeft: "para Año Nuevo",
+            info: ["Celebración mundial del inicio de un nuevo año."],
+        }
+    },
+    copaAmerica: {
+        date: { targetIso: "2028-06-01T00:00:00Z" },
+        meta: {
+            pageTitle: "¿Cuánto falta para la Copa América 2028? | Faltapoco.com",
+            description: "Contador para la Copa América 2028. Sigue la cuenta regresiva y entérate de las fechas del torneo.",
+            keywords: "copa américa 2028, cuanto falta copa america, faltapoco, contador copa america",
+            url: "https://faltapoco.com/copa-america",
+            slug: "copa-america",
+            image: "https://faltapoco.com/og/copa-america.png",
+        },
+        content: {
+            title: "Copa América 2028",
+            connector: "la",
+            whatWhen: "La Copa América 2028 comienza aproximadamente cerca del",
+            timeLeft: "para la Copa América 2028",
+            info: ["Torneo continental de selecciones.", "Fechas y sedes oficiales por confirmar.", "Se espera que comience en junio del 2028."],
+        }
+    },
+    reyesMagos: {
+        date: { targetIso: "2026-01-06T00:00:00Z" },
+        meta: {
+            pageTitle: "¿Cuánto falta para Reyes Magos 2026? | Faltapoco.com",
+            description: "Descubre exactamente cuántos días, horas y minutos faltan para el Día de Reyes Magos 2026. Contador en tiempo real y fecha exacta del evento.",
+            keywords: "reyes magos 2026, cuanto falta para reyes magos, faltapoco, contador reyes magos",
+            url: "https://faltapoco.com/reyes-magos",
+            slug: "reyes-magos",
+            image: "https://faltapoco.com/og/reyes-magos.png",
+        },
+        content: {
+            title: "Día de Reyes Magos 2026",
+            connector: "el",
+            whatWhen: "El Día de Reyes Magos es el",
+            timeLeft: "para el Día de Reyes Magos 2026",
+            info: ["Tradición de regalos en muchos países."],
+        }
+    },
     lolWorlds: {
         date: { targetIso: "2026-11-15T00:00:00Z" },
         meta: {
@@ -51,60 +141,6 @@ export const pages = {
             whatWhen: "El iPhone 18 se lanzará aproximadamente cerca de",
             timeLeft: "para el lanzamiento del iPhone 18",
             info: ["Apple suele lanzar nuevos modelos en otoño."],
-        }
-    },
-    anoNuevo: {
-        date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },
-        meta: {
-            pageTitle: "¿Cuánto falta para Año Nuevo? | Faltapoco.com",
-            description: "Descubre exactamente cuántos días, horas y minutos faltan para Año Nuevo. Contador en tiempo real y fecha exacta del inicio.",
-            keywords: "año nuevo, cuanto falta para año nuevo, faltapoco, contador año nuevo",
-            url: "https://faltapoco.com/ano-nuevo",
-            slug: "ano-nuevo",
-            image: "https://faltapoco.com/og/ano-nuevo.png",
-        },
-        content: {
-            title: "Año Nuevo",
-            connector: "el",
-            whatWhen: "Año Nuevo comienza el",
-            timeLeft: "para Año Nuevo",
-            info: ["Celebración mundial del inicio de un nuevo año."],
-        }
-    },
-    semanaSanta: {
-        date: { targetIso: "2026-04-02T00:00:00Z" },
-        meta: {
-            pageTitle: "¿Cuánto falta para Semana Santa 2026? | Faltapoco.com",
-            description: "Descubre exactamente cuántos días, horas y minutos faltan para Semana Santa 2026. Contador en tiempo real para Jueves Santo y Viernes Santo, y fechas exactas.",
-            keywords: "semana santa 2026, jueves santo, viernes santo, cuanto falta para semana santa, faltapoco, contador semana santa",
-            url: "https://faltapoco.com/semana-santa",
-            slug: "semana-santa",
-            image: "https://faltapoco.com/og/semana-santa.png",
-        },
-        content: {
-            title: "Semana Santa 2026",
-            connector: "",
-            whatWhen: "Semana Santa comienza el",
-            timeLeft: "para Semana Santa 2026",
-            info: ["Celebración religiosa en todo el mundo.", "Se incluyen Jueves y Viernes Santo."],
-        }
-    },
-    reyesMagos: {
-        date: { targetIso: "2026-01-06T00:00:00Z" },
-        meta: {
-            pageTitle: "¿Cuánto falta para Reyes Magos 2026? | Faltapoco.com",
-            description: "Descubre exactamente cuántos días, horas y minutos faltan para el Día de Reyes Magos 2026. Contador en tiempo real y fecha exacta del evento.",
-            keywords: "reyes magos 2026, cuanto falta para reyes magos, faltapoco, contador reyes magos",
-            url: "https://faltapoco.com/reyes-magos",
-            slug: "reyes-magos",
-            image: "https://faltapoco.com/og/reyes-magos.png",
-        },
-        content: {
-            title: "Día de Reyes Magos 2026",
-            connector: "el",
-            whatWhen: "El Día de Reyes Magos es el",
-            timeLeft: "para el Día de Reyes Magos 2026",
-            info: ["Tradición de regalos en muchos países."],
         }
     },
     eclipseLatam: {
@@ -309,25 +345,6 @@ export const pages = {
             whatWhen: "La Eurocopa 2028 comienza el",
             timeLeft: "para la Eurocopa 2028",
             info: ["Torneo europeo de selecciones.", "Fechas exactas pueden variar según la UEFA."],
-        }
-    },
-
-    copaAmerica: {
-        date: { targetIso: "2028-06-01T00:00:00Z" },
-        meta: {
-            pageTitle: "¿Cuánto falta para la Copa América 2028? | Faltapoco.com",
-            description: "Contador para la Copa América 2028. Sigue la cuenta regresiva y entérate de las fechas del torneo.",
-            keywords: "copa américa 2028, cuanto falta copa america, faltapoco, contador copa america",
-            url: "https://faltapoco.com/copa-america",
-            slug: "copa-america",
-            image: "https://faltapoco.com/og/copa-america.png",
-        },
-        content: {
-            title: "Copa América 2028",
-            connector: "la",
-            whatWhen: "La Copa América 2028 comienza aproximadamente cerca del",
-            timeLeft: "para la Copa América 2028",
-            info: ["Torneo continental de selecciones.", "Fechas y sedes oficiales por confirmar.", "Se espera que comience en junio del 2028."],
         }
     },
 
