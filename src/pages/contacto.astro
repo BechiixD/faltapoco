@@ -1,7 +1,7 @@
 ---
 import Layout from "../Layouts/Layout.astro";
 import ContactForm from "../components/ContactForm.tsx";
-const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
+const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY;
 ---
 
 <Layout title="Contactanos | Faltapoco.com">
@@ -12,7 +12,8 @@ const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
                     Contactanos
                 </h2>
                 <p class="text-center text-gray-500 mb-12">
-                    ¿Tenés una sugerencia, un proyecto en mente o querés colaborar? ¡Escribinos!
+                    ¿Tenés una sugerencia, un proyecto en mente o querés
+                    colaborar? ¡Escribinos!
                 </p>
                 <div class="bg-white rounded-xl shadow p-8">
                     <ContactForm accessKey={accessKey} client:idle />
