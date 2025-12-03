@@ -2,11 +2,7 @@
 import Layout from "./Layout.astro";
 import { calcTimeLeft } from "../utils/calcTimeLeft";
 
-const {
-        date,
-        meta,
-        content
-    } = Astro.props;
+const { date, meta, content } = Astro.props;
 
 const targetIso = date.targetIso;
 const initial = calcTimeLeft(targetIso);
@@ -32,67 +28,71 @@ const organizationSchema = new URL("/#/schema/Organization", canonicalURL);
 
 // Structured data
 const structuredData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": webSiteSchema.toString(),
-      name: "Faltapoco.com",
-      description: "Contadores en tiempo real para eventos importantes. Descubrí cuánto falta para el Mundial, Navidad, Año Nuevo y más.",
-      url: siteURL.toString(),
-      inLanguage: "es",
-      publisher: {
-        "@type": "Organization",
-        "@id": organizationSchema.toString(),
-        name: "Faltapoco",
-        url: siteURL.toString(),
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": canonicalURL.toString(),
-      url: canonicalURL.toString(),
-      name: pageTitle,
-      headline: pageTitle,
-      description: description,
-      image: image,
-      inLanguage: "es",
-      isPartOf: {
-        "@id": webSiteSchema.toString(),
-      },
-      publisher: {
-        "@type": "Organization",
-        "@id": organizationSchema.toString(),
-      }
-    }
-  ]
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": webSiteSchema.toString(),
+            name: "Faltapoco.com",
+            description:
+                "Contadores en tiempo real para eventos importantes. Descubrí cuánto falta para el Mundial, Navidad, Año Nuevo y más.",
+            url: siteURL.toString(),
+            inLanguage: "es",
+            publisher: {
+                "@type": "Organization",
+                "@id": organizationSchema.toString(),
+                name: "Faltapoco",
+                url: siteURL.toString(),
+            },
+        },
+        {
+            "@type": "WebPage",
+            "@id": canonicalURL.toString(),
+            url: canonicalURL.toString(),
+            name: pageTitle,
+            headline: pageTitle,
+            description: description,
+            image: image,
+            inLanguage: "es",
+            isPartOf: {
+                "@id": webSiteSchema.toString(),
+            },
+            publisher: {
+                "@type": "Organization",
+                "@id": organizationSchema.toString(),
+            },
+        },
+    ],
 };
 ---
 
 <Layout title={pageTitle}>
     <Fragment slot="head">
-    <!-- Meta SEO -->
-    <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
-    <link rel="canonical" href={url} />
+        <!-- Meta SEO -->
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <link rel="canonical" href={url} />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={url} />
-    <meta property="og:image" content={image} />
-    <meta property="og:locale" content="es_ES" />
+        <!-- Open Graph -->
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:image" content={image} />
+        <meta property="og:locale" content="es_ES" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={pageTitle} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
 
-    <!-- Schema.org (JSON-LD) -->
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-  </Fragment>
+        <!-- Schema.org (JSON-LD) -->
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(structuredData)}
+        />
+    </Fragment>
     <main
         class="flex flex-col items-center justify-center flex-grow px-4 py-8 space-y-12 text-center md:gap-16"
     >
@@ -151,13 +151,14 @@ const structuredData = {
                 class="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-4 shadow-sm"
                 aria-label="Información adicional sobre el evento"
             >
-                {content.info && content.info.map((item: string) => (
-                    <p
-                        class="mt-2 text-base sm:text-lg text-gray-700 leading-relaxed"
-                    >
-                        {item}
-                    </p>
-                ))}
+                {
+                    content.info &&
+                        content.info.map((item: string) => (
+                            <p class="mt-2 text-base sm:text-lg text-gray-700 leading-relaxed">
+                                {item}
+                            </p>
+                        ))
+                }
             </div>
         </div>
 
@@ -167,18 +168,22 @@ const structuredData = {
             // inicializa todos los [data-countdown]
             initCountdown();
         </script>
-        </section>
-            <section class="text-center max-w-2xl mx-auto mt-6 text-gray-700 leading-relaxed">
-                <p>
-                    Pronto podrás integrar este contador en tu propia página o proyecto.
-                    Estamos desarrollando una <strong>API gratuita</strong> que te permitirá obtener
-                    el tiempo restante hasta cualquier evento importante, de forma sencilla y en tiempo real.
-                </p>
-                <p class="my-3">
-                    En Faltapoco queremos ofrecer <em>temporizadores precisos y personalizables</em> para fechas relevantes como
-                    el Mundial, Navidad o Año Nuevo. Si querés sugerir un nuevo evento o mejorar el contador,
-                    próximamente podrás hacerlo desde nuestra sección de comunidad.
-                </p>
-            </section>
     </main>
+    <section
+        class="text-center max-w-2xl mx-auto mt-6 text-gray-700 leading-relaxed"
+    >
+        <p>
+            Pronto podrás integrar este contador en tu propia página o proyecto.
+            Estamos desarrollando una <strong>API gratuita</strong> que te permitirá
+            obtener el tiempo restante hasta cualquier evento importante, de forma
+            sencilla y en tiempo real.
+        </p>
+        <p class="my-3">
+            En Faltapoco queremos ofrecer <em
+                >temporizadores precisos y personalizables</em
+            > para fechas relevantes como el Mundial, Navidad o Año Nuevo. Si querés
+            sugerir un nuevo evento o mejorar el contador, próximamente podrás hacerlo
+            desde nuestra sección de comunidad.
+        </p>
+    </section>
 </Layout>

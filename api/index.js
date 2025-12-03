@@ -78,12 +78,13 @@ app.get('/api/countdown/:slug', async (req, res) => {
     res.setHeader('Cache-Control', 'public, max-age=5');
     res.setHeader('X-Cache-Status', pagesLoadedAt ? 'HIT' : 'MISS');
 
-    // Return full page data structure
-    // We spread pageData to include date, meta, content
-    // And add calculated timeLeft
     res.json({
-      ...pageData,
-      timeLeft
+      slug: pageData.meta.slug,
+      title: pageData.content.title,
+      targetDate: pageData.date.targetIso,
+      timeLeft,
+      description: pageData.content.info?.[0] || '',
+      url: pageData.meta.url
     });
   } catch (error) {
     console.error('Error:', error);

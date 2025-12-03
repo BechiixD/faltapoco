@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "management": "node management/app.js",
-    "create-astro": "node management/create-astro-files.js"
+    "create-astro": "node management/create-astro-files.js",
+    "generate:json": "node scripts/generate-json.js"
   },
   "dependencies": {
     "@astrojs/react": "4.4.2",
