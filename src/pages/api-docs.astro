@@ -1,0 +1,238 @@
+---
+import Layout from "../Layouts/Layout.astro";
+
+const pageTitle = "Documentación API | Faltapoco.com";
+const description =
+    "Documentación temporal y simple de la API pública de Faltapoco: endpoints, ejemplos de fetch y embed (iframe).";
+const url = "https://faltapoco.com/api-docs";
+const image = "https://faltapoco.com/og/api-docs.png";
+---
+
+<Layout title={pageTitle}>
+    <Fragment slot="head">
+        <meta name="description" content={description} />
+        <link rel="canonical" href={url} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:image" content={image} />
+    </Fragment>
+
+    <main
+        class="flex flex-col items-center justify-center flex-grow px-4 py-8 space-y-12 text-center md:gap-16"
+    >
+        <div class="w-full max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
+                Documentación de la API
+            </h1>
+            <p class="text-lg text-gray-700 mb-6">
+                Esta es una documentación temporal y simple. Encontrarás los
+                endpoints principales, ejemplos de uso con fetch y iFrame, y una
+                respuesta JSON de ejemplo. Usá siempre el dominio principal <code
+                    >https://faltapoco.com</code
+                > para integrar la API.
+            </p>
+
+            <section
+                class="bg-white border border-gray-100 rounded-2xl shadow-sm p-6 mb-8"
+            >
+                <h2 class="text-2xl font-semibold mb-4 text-left">Endpoints</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="text-left">
+                        <p class="font-semibold">GET /api/countdown/:slug</p>
+                        <p class="text-sm text-gray-600">
+                            Devuelve los datos del contador para un slug (por
+                            ejemplo: <code>navidad</code>).
+                        </p>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-semibold">GET /api/embed/:slug</p>
+                        <p class="text-sm text-gray-600">
+                            Devuelve HTML embebible (widget) para integrar vía
+                            iframe.
+                        </p>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-semibold">GET /api/pages</p>
+                        <p class="text-sm text-gray-600">
+                            Lista básica de páginas (slug, title, url).
+                        </p>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-semibold">GET /api/health</p>
+                        <p class="text-sm text-gray-600">
+                            Estado del servidor (util para health checks).
+                        </p>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-semibold">POST /api/reload-cache</p>
+                        <p class="text-sm text-gray-600">
+                            Forza la recarga del cache de páginas en el servidor
+                            (administración).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- iFrame Embed box -->
+                <div class="bg-white rounded-lg p-4 sm:p-6 shadow-sm">
+                    <h3 class="font-semibold text-xl mb-3">📦 iFrame embed</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Copia y pega este snippet para embeber un contador en
+                        cualquier sitio.
+                    </p>
+
+                    <div class="relative">
+                        <pre
+                            class="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-xs md:text-sm"><code id="doc-iframe-code">&lt;iframe src="https://faltapoco.com/api/embed/navidad" width="100%" height="250" frameborder="0" style="border-radius:8px;"&gt;&lt;/iframe&gt;</code></pre>
+                        <button
+                            onclick="docCopy('doc-iframe-code', event)"
+                            class="absolute top-2 right-2 bg-[#0B5FFF] text-white px-3 py-1.5 rounded-lg text-xs md:text-sm"
+                            >📋 Copiar</button
+                        >
+                    </div>
+
+                    <div class="mt-4 text-left text-sm text-gray-700">
+                        <p class="font-semibold">Preview:</p>
+                        <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                            <div class="text-[#FFDD00] font-semibold mb-1">
+                                Navidad
+                            </div>
+                            <div
+                                class="text-[#0B5FFF] font-bold font-mono text-2xl"
+                            >
+                                32d 03h 55m 22s
+                            </div>
+                            <div class="text-gray-600 text-sm mt-1">
+                                Contador de ejemplo embebido
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fetch API box -->
+                <div class="bg-white rounded-lg p-4 sm:p-6 shadow-sm">
+                    <h3 class="font-semibold text-xl mb-3">🔌 Fetch usage</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Consumir la API (ejemplo con fetch):
+                    </p>
+
+                    <div class="relative">
+                        <pre
+                            class="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-xs md:text-sm"><code id="doc-fetch-code">fetch("https://faltapoco.com/api/countdown/navidad")
+    .then(res => res.json())
+    .then(data => console.log(data));</code></pre>
+                        <button
+                            onclick="docCopy('doc-fetch-code', event)"
+                            class="absolute top-2 right-2 bg-[#0B5FFF] text-white px-3 py-1.5 rounded-lg text-xs md:text-sm"
+                            >📋 Copiar</button
+                        >
+                    </div>
+
+                    <div class="mt-4 text-left text-sm text-gray-700">
+                        <p class="font-semibold">JSON response preview:</p>
+                        <pre
+                            class="bg-gray-900 text-green-400 p-3 rounded text-xs md:text-sm overflow-x-auto mt-2"><code>{`{
+    "slug": "navidad",
+    "title": "Navidad",
+    "targetDate": "2025-12-25T00:00:00Z",
+    "timeLeft": { "days": 32, "hours": 3, "minutes": 55, "seconds": 22 }
+}`}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="bg-white border border-gray-100 rounded-2xl shadow-sm p-6 mb-8 text-left"
+            >
+                <h3 class="font-semibold text-xl mb-3">
+                    Notas rápidas y recomendaciones
+                </h3>
+                <ul
+                    class="list-disc pl-4 md:pl-8 text-sm text-gray-700 space-y-2"
+                >
+                    <li>
+                        Recomendamos usar el dominio principal <strong
+                            >https://faltapoco.com</strong
+                        > para todas las llamadas públicas a la API.
+                    </li>
+                    <li>
+                        Usá cabeceras de cache (ej.: <code>Cache-Control</code>)
+                        cuando integres la API en entornos con mucha carga.
+                    </li>
+                    <li>
+                        Si necesitás re-dibujar un contador en el cliente, llamá
+                        periódicamente al endpoint o usá el widget embebido.
+                    </li>
+                </ul>
+
+                <div
+                    class="flex flex-col md:flex-row justify-center items-center gap-3 mt-8 mb-8"
+                >
+                    <a
+                        href="https://faltapoco.com/api/embed/navidad"
+                        target="_blank"
+                        rel="noopener"
+                        class="inline-block bg-gray-100 hover:bg-gray-200 text-[#0B5FFF] border border-gray-200 px-4 py-2 rounded-lg font-semibold shadow-sm text-sm transition-all"
+                        >Probar Embed</a
+                    >
+                    <a
+                        href="https://faltapoco.com/api/countdown/navidad"
+                        target="_blank"
+                        rel="noopener"
+                        class="inline-block bg-gray-100 hover:bg-gray-200 text-[#0B5FFF] border border-gray-200 px-4 py-2 rounded-lg font-semibold shadow-sm text-sm transition-all"
+                        >Probar Countdown</a
+                    >
+                    <a
+                        href="https://faltapoco.com/api/pages"
+                        target="_blank"
+                        rel="noopener"
+                        class="inline-block bg-gray-100 hover:bg-gray-200 text-[#0B5FFF] border border-gray-200 px-4 py-2 rounded-lg font-semibold shadow-sm text-sm transition-all"
+                        >Probar All Pages</a
+                    >
+                </div>
+
+                <div class="text-center mb-12 text-sm text-gray-600">
+                    Esta es una documentación temporal. En caso de duda o falta
+                    de información, contactanos.
+                </div>
+            </section>
+        </div>
+
+        <script is:inline>
+            function docCopy(id, event) {
+                const el = document.getElementById(id);
+                const code = el?.textContent || "";
+                if (!code) return;
+
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard
+                        .writeText(code)
+                        .then(() => showDocFeedback(event.target));
+                } else {
+                    const textArea = document.createElement("textarea");
+                    textArea.value = code;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand("copy");
+                        showDocFeedback(event.target);
+                    } catch (e) {
+                        console.error(e);
+                    }
+                    document.body.removeChild(textArea);
+                }
+            }
+
+            function showDocFeedback(button) {
+                const text = button.textContent;
+                button.textContent = "✅ Copiado!";
+                setTimeout(() => {
+                    button.textContent = text;
+                }, 2000);
+            }
+        </script>
+    </main>
+</Layout>
