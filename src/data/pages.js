@@ -17,24 +17,6 @@ export const pages = {
             info: ["El torneo se jugará en Norteamérica.", "Participan 48 selecciones."],
         }
     },
-    hytale: {
-        date: { targetIso: "2026-01-13T00:00:00Z" },
-        meta: {
-            pageTitle: "¿Cuánto falta para Hytale Early Access? | Faltapoco.com",
-            description: "Cuenta regresiva para el lanzamiento de Hytale Early Access. El acceso anticipado estará disponible el 13 de enero de 2026. Precio desde 20 dólares. Contador en tiempo real.",
-            keywords: "hytale early access, hytale release date, hytale launch, cuanto falta para hytale, hytale precio, hytale 2026, faltapoco, contador hytale, hytale beta, hytale access anticipado",
-            url: "https://faltapoco.com/hytale",
-            slug: "hytale",
-            image: "https://faltapoco.com/og/hytale.png",
-        },
-        content: {
-            title: "Hytale Early Access",
-            connector: "el",
-            whatWhen: "Hytale Early Access estará disponible el",
-            timeLeft: "para Hytale Early Access",
-            info: ["Acceso anticipado disponible desde el 13 de enero de 2026.", "Precio estimado desde 20 dólares.", "Juego de aventura y construcción desarrollado por Hypixel Studios.", "Altamente esperado por la comunidad gaming desde su anuncio."],
-        }
-    },
     semanaSanta: {
         date: { targetIso: "2026-04-02T00:00:00Z" },
         meta: {
@@ -54,7 +36,7 @@ export const pages = {
         }
     },
     anoNuevo: {
-        date: { targetIso: `${new Date().getUTCFullYear() + 1}-01-01T00:00:00Z` },
+        date: { targetIso: "2027-01-01T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para Año Nuevo? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para Año Nuevo. Contador en tiempo real y fecha exacta del inicio.",
@@ -90,25 +72,25 @@ export const pages = {
         }
     },
     reyesMagos: {
-        date: { targetIso: "2026-01-06T00:00:00Z" },
+        date: { targetIso: "2027-01-06T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Reyes Magos 2026? | Faltapoco.com",
-            description: "Descubre exactamente cuántos días, horas y minutos faltan para el Día de Reyes Magos 2026. Contador en tiempo real y fecha exacta del evento.",
-            keywords: "reyes magos 2026, cuanto falta para reyes magos, faltapoco, contador reyes magos",
+            pageTitle: "¿Cuánto falta para Reyes Magos 2027? | Faltapoco.com",
+            description: "Descubre exactamente cuántos días, horas y minutos faltan para el Día de Reyes Magos 2027. Contador en tiempo real y fecha exacta del evento.",
+            keywords: "reyes magos 2027, cuanto falta para reyes magos, faltapoco, contador reyes magos",
             url: "https://faltapoco.com/reyes-magos",
             slug: "reyes-magos",
             image: "https://faltapoco.com/og/reyes-magos.png",
         },
         content: {
-            title: "Día de Reyes Magos 2026",
+            title: "Día de Reyes Magos 2027",
             connector: "el",
             whatWhen: "El Día de Reyes Magos es el",
-            timeLeft: "para el Día de Reyes Magos 2026",
+            timeLeft: "para el Día de Reyes Magos 2027",
             info: ["Tradición de regalos en muchos países."],
         }
     },
     lolWorlds: {
-        date: { targetIso: "2026-11-15T00:00:00Z" },
+        date: { targetIso: "2026-11-08T00:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para Worlds 2026? | Faltapoco.com",
             description: "Descubre exactamente cuántos días, horas y minutos faltan para la final del League of Legends World Championship 2026 (Worlds). Contador en tiempo real y detalles del evento.",
@@ -180,20 +162,20 @@ export const pages = {
         }
     },
     navidad: {
-        date: { targetIso: "2025-12-25T00:00:00Z" },
+        date: { targetIso: "2026-12-25T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Navidad 2025? | Faltapoco.com",
-            description: "Descubre exactamente cuántos días, horas y minutos faltan para Navidad 2025. Contador en tiempo real, fecha oficial y curiosidades sobre la celebración.",
-            keywords: "navidad 2025, cuanto falta para navidad, faltapoco, contador navidad",
+            pageTitle: "¿Cuánto falta para Navidad 2026? | Faltapoco.com",
+            description: "Descubre exactamente cuántos días, horas y minutos faltan para Navidad 2026. Contador en tiempo real, fecha oficial y curiosidades sobre la celebración.",
+            keywords: "navidad 2026, cuanto falta para navidad, faltapoco, contador navidad",
             url: "https://faltapoco.com/navidad",
             slug: "navidad",
             image: "https://faltapoco.com/og/navidad.png",
         },
         content: {
-            title: "Navidad 2025",
+            title: "Navidad 2026",
             connector: "la",
             whatWhen: "La Navidad se celebra el",
-            timeLeft: "para Navidad 2025",
+            timeLeft: "para Navidad 2026",
             info: ["Celebración cristiana mundial."],
         }
     },
@@ -233,7 +215,6 @@ export const pages = {
             info: ["Visible en España y Europa."],
         }
     },
-    // NEW WITH CHATGPT
     halloween: {
         date: { targetIso: "2026-10-31T00:00:00Z" },
         meta: {
@@ -252,7 +233,6 @@ export const pages = {
             info: ["Se celebra el 31 de octubre.", "Popular por disfraces y dulces."],
         }
     },
-
     sanValentin: {
         date: { targetIso: "2026-02-14T00:00:00Z" },
         meta: {
@@ -271,64 +251,60 @@ export const pages = {
             info: ["Tradicionalmente el 14 de febrero.", "Día de regalos y parejas."],
         }
     },
-
     anoNuevoChino: {
         date: { targetIso: "2026-02-17T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Año Nuevo Chino? | Faltapoco.com",
-            description: "Contador para el Año Nuevo Chino (festividades y calendario lunar). Averigua la fecha exacta y cuenta regresiva.",
-            keywords: "año nuevo chino, año lunar, cuanto falta año nuevo chino, faltapoco, contador china",
+            pageTitle: "¿Cuánto falta para el Año Nuevo Chino 2026? | Faltapoco.com",
+            description: "Contador para el Año Nuevo Chino 2026, Año del Caballo. Averigua la fecha exacta y cuenta regresiva.",
+            keywords: "año nuevo chino 2026, año del caballo, año lunar, cuanto falta año nuevo chino, faltapoco, contador china",
             url: "https://faltapoco.com/ano-nuevo-chino",
             slug: "ano-nuevo-chino",
             image: "https://faltapoco.com/og/ano-nuevo-chino.png",
         },
         content: {
-            title: "Año Nuevo Chino",
+            title: "Año Nuevo Chino 2026",
             connector: "el",
-            whatWhen: "El Año Nuevo Chino comienza el",
-            timeLeft: "para el Año Nuevo Chino",
-            info: ["Basado en el calendario lunar.", "Festividades familiares y desfiles."],
+            whatWhen: "El Año Nuevo Chino 2026 comienza el",
+            timeLeft: "para el Año Nuevo Chino 2026",
+            info: ["Basado en el calendario lunar.", "2026 es el Año del Caballo.", "Festividades familiares y desfiles."],
         }
     },
-
     cyberMonday: {
         date: { targetIso: "2026-11-30T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Cyber Monday? | Faltapoco.com",
-            description: "Cuenta regresiva para Cyber Monday: ofertas online y descuentos. Prepárate para las mejores promociones.",
+            pageTitle: "¿Cuánto falta para Cyber Monday 2026? | Faltapoco.com",
+            description: "Cuenta regresiva para Cyber Monday 2026: ofertas online y descuentos. Prepárate para las mejores promociones.",
             keywords: "cyber monday 2026, ofertas online, cuanto falta cyber monday, faltapoco, contador cyber monday",
             url: "https://faltapoco.com/cyber-monday",
             slug: "cyber-monday",
             image: "https://faltapoco.com/og/cyber-monday.png",
         },
         content: {
-            title: "Cyber Monday",
+            title: "Cyber Monday 2026",
             connector: "el",
             whatWhen: "Cyber Monday cae el",
-            timeLeft: "para Cyber Monday",
+            timeLeft: "para Cyber Monday 2026",
             info: ["Día de grandes descuentos online.", "Suele ser el lunes después de Black Friday."],
         }
     },
-
     diaDeLaMadre: {
         date: { targetIso: "2026-05-10T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Día de la Madre? | Faltapoco.com",
-            description: "Contador para el Día de la Madre (fecha variable según país). Próxima fecha indicada para 2026.",
-            keywords: "día de la madre, cuanto falta dia de la madre, faltapoco, contador dia de la madre",
+            pageTitle: "¿Cuánto falta para el Día de la Madre 2026? | Faltapoco.com",
+            description: "Contador para el Día de la Madre 2026 (fecha variable según país). Próxima fecha indicada para 2026.",
+            keywords: "día de la madre 2026, cuanto falta dia de la madre, faltapoco, contador dia de la madre",
             url: "https://faltapoco.com/dia-de-la-madre",
             slug: "dia-de-la-madre",
             image: "https://faltapoco.com/og/dia-de-la-madre.png",
         },
         content: {
-            title: "Día de la Madre",
+            title: "Día de la Madre 2026",
             connector: "el",
             whatWhen: "El Día de la Madre es el",
-            timeLeft: "para el Día de la Madre",
+            timeLeft: "para el Día de la Madre 2026",
             info: ["Fecha varía por país; aquí indicamos la próxima fecha general.", "Ideal para regalos y celebraciones familiares."],
         }
     },
-
     eurocopa: {
         date: { targetIso: "2028-06-09T00:00:00Z" },
         meta: {
@@ -347,70 +323,66 @@ export const pages = {
             info: ["Torneo europeo de selecciones.", "Fechas exactas pueden variar según la UEFA."],
         }
     },
-
     superBowl: {
         date: { targetIso: "2026-02-08T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Super Bowl? | Faltapoco.com",
-            description: "Contador para el próximo Super Bowl. Fecha estimada y cuenta regresiva en tiempo real.",
+            pageTitle: "¿Cuánto falta para el Super Bowl 2026? | Faltapoco.com",
+            description: "Contador para el Super Bowl LX. Fecha estimada y cuenta regresiva en tiempo real.",
             keywords: "super bowl 2026, cuanto falta super bowl, final nfl, faltapoco, contador super bowl",
             url: "https://faltapoco.com/super-bowl",
             slug: "super-bowl",
             image: "https://faltapoco.com/og/super-bowl.png",
         },
         content: {
-            title: "Super Bowl",
+            title: "Super Bowl LX",
             connector: "el",
-            whatWhen: "El Super Bowl se juega el",
-            timeLeft: "para el Super Bowl",
+            whatWhen: "El Super Bowl LX se juega el",
+            timeLeft: "para el Super Bowl LX",
             info: ["Evento final de la NFL.", "Gran audiencia internacional."],
         }
     },
-
     championsFinal: {
         date: { targetIso: "2026-05-30T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para la Final de la Champions? | Faltapoco.com",
-            description: "Cuenta regresiva para la final de la UEFA Champions League. Fecha estimada y detalles del partido decisivo.",
-            keywords: "champions league final, cuanto falta champions, final uefa, faltapoco, contador champions",
+            pageTitle: "¿Cuánto falta para la Final de la Champions 2026? | Faltapoco.com",
+            description: "Cuenta regresiva para la final de la UEFA Champions League 2026. Fecha estimada y detalles del partido decisivo.",
+            keywords: "champions league final 2026, cuanto falta champions, final uefa, faltapoco, contador champions",
             url: "https://faltapoco.com/champions-final",
             slug: "champions-final",
             image: "https://faltapoco.com/og/champions-final.png",
         },
         content: {
-            title: "Final de la Champions League",
+            title: "Final de la Champions League 2026",
             connector: "la",
             whatWhen: "La final de la Champions League es el",
-            timeLeft: "para la final de la Champions",
+            timeLeft: "para la final de la Champions 2026",
             info: ["Se juega a fines de mayo/mediados de junio.", "Partido definitorio del torneo clubs europeo."],
         }
     },
-
     theInternational: {
-        date: { targetIso: "2026-08-20T00:00:00Z" },
+        date: { targetIso: "2026-09-13T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para The International (Dota 2)? | Faltapoco.com",
-            description: "Cuenta regresiva para The International, el mundial de Dota 2. Fechas, info y el contador en tiempo real.",
+            pageTitle: "¿Cuánto falta para The International 2026 (Dota 2)? | Faltapoco.com",
+            description: "Cuenta regresiva para The International 2026, el mundial de Dota 2. Fechas, info y el contador en tiempo real.",
             keywords: "the international 2026, dota2 ti, cuanto falta the international, faltapoco, contador ti",
             url: "https://faltapoco.com/the-international",
             slug: "the-international",
             image: "https://faltapoco.com/og/the-international.png",
         },
         content: {
-            title: "The International (Dota 2)",
+            title: "The International 2026 (Dota 2)",
             connector: "el",
             whatWhen: "The International comienza aproximadamente cerca del",
-            timeLeft: "para The International",
+            timeLeft: "para The International 2026",
             info: ["Mayor torneo anual de Dota 2.", "Reúne equipos top y gran prize pool."],
         }
     },
-
     fortniteSeason: {
-        date: { targetIso: "2025-11-30T10:00:00Z" },
+        date: { targetIso: "2026-03-01T10:00:00Z" },
         meta: {
             pageTitle: "¿Cuánto falta para la próxima temporada de Fortnite? | Faltapoco.com",
             description: "Contador para el inicio de la próxima temporada de Fortnite. Datos de temporada y cuenta regresiva en tiempo real.",
-            keywords: "fortnite season, cuanto falta fortnite season, fortnite temporada 7, faltapoco, contador fortnite",
+            keywords: "fortnite season, cuanto falta fortnite season, fortnite nueva temporada, faltapoco, contador fortnite",
             url: "https://faltapoco.com/fortnite-season",
             slug: "fortnite-season",
             image: "https://faltapoco.com/og/fortnite-season.png",
@@ -418,50 +390,47 @@ export const pages = {
         content: {
             title: "Nueva Temporada de Fortnite",
             connector: "la",
-            whatWhen: "La nueva temporada de Fortnite comienza el",
+            whatWhen: "La nueva temporada de Fortnite comienza aproximadamente cerca del",
             timeLeft: "para la nueva temporada de Fortnite",
-            info: ["El dia 29 de noviembre termina la temporada 6.", "Se espera que la temporada 7 comience unos dias despues.", "Es probable que los servidores esten apagados desde 12 hs, hasta un par de dias mientras se actualiza."],
+            info: ["Las temporadas de Fortnite suelen durar unos 3 meses.", "Fecha estimada basada en el ciclo habitual de temporadas."],
         }
     },
-
     minecraftLive: {
-        date: { targetIso: "2026-10-17T00:00:00Z" },
+        date: { targetIso: "2026-09-26T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Minecraft Live? | Faltapoco.com",
-            description: "Contador para Minecraft Live: novedades, votaciones y anuncios. Cuenta regresiva en tiempo real.",
+            pageTitle: "¿Cuánto falta para Minecraft Live 2026? | Faltapoco.com",
+            description: "Contador para Minecraft Live 2026: novedades, votaciones y anuncios. Cuenta regresiva en tiempo real.",
             keywords: "minecraft live 2026, cuanto falta minecraft live, minecraft event, faltapoco, contador minecraft",
             url: "https://faltapoco.com/minecraft-live",
             slug: "minecraft-live",
             image: "https://faltapoco.com/og/minecraft-live.png",
         },
         content: {
-            title: "Minecraft Live",
+            title: "Minecraft Live 2026",
             connector: "el",
             whatWhen: "Minecraft Live se celebra aproximadamente cerca del",
-            timeLeft: "para Minecraft Live",
-            info: ["Evento anual con votaciones y anuncios.", "Interés alto en la comunidad Minecraft.", "Se espera que se celebre en octubre del 2026."],
+            timeLeft: "para Minecraft Live 2026",
+            info: ["Evento anual con votaciones y anuncios.", "Interés alto en la comunidad Minecraft.", "Se espera que se celebre en septiembre del 2026."],
         }
     },
-
     googleIO: {
-        date: { targetIso: "2026-05-12T00:00:00Z" },
+        date: { targetIso: "2026-05-19T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Google I/O? | Faltapoco.com",
-            description: "Contador para Google I/O: conferencias, novedades de Android y Google Cloud. Fecha estimada y noticias.",
+            pageTitle: "¿Cuánto falta para Google I/O 2026? | Faltapoco.com",
+            description: "Contador para Google I/O 2026: conferencias, novedades de Android y Google Cloud. Fecha estimada y noticias.",
             keywords: "google io 2026, cuanto falta google io, google conference, faltapoco, contador google io",
             url: "https://faltapoco.com/google-io",
             slug: "google-io",
             image: "https://faltapoco.com/og/google-io.png",
         },
         content: {
-            title: "Google I/O",
+            title: "Google I/O 2026",
             connector: "el",
             whatWhen: "Google I/O se celebra aproximadamente cerca del",
-            timeLeft: "para Google I/O",
+            timeLeft: "para Google I/O 2026",
             info: ["Conferencias de desarrolladores y anuncios Android.", "Interés en comunidad dev y product.", "Se espera que se celebre en mayo del 2026."],
         }
     },
-
     inicioEstacion: {
         date: { targetIso: "2026-12-21T00:00:00Z" },
         meta: {
@@ -473,18 +442,17 @@ export const pages = {
             image: "https://faltapoco.com/og/inicio-verano.png",
         },
         content: {
-            title: "Inicio del Verano (Hem. Sur)",
+            title: "Inicio del Verano 2026 (Hem. Sur)",
             connector: "el",
             whatWhen: "El inicio del verano en el Hemisferio Sur es el",
-            timeLeft: "para el inicio del verano",
+            timeLeft: "para el inicio del verano 2026",
             info: ["Fecha basada en solsticio (21 de diciembre).", "Útil para turismo y vacaciones."],
         }
     },
-
     lollapalooza: {
-        date: { targetIso: "2026-03-13T00:00:00Z" },
+        date: { targetIso: "2026-03-20T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Lollapalooza Argentina? | Faltapoco.com",
+            pageTitle: "¿Cuánto falta para Lollapalooza Argentina 2026? | Faltapoco.com",
             description: "Contador para Lollapalooza 2026 en Argentina (fechas de festival y lineups). Ideal para fans y viajeros musicales.",
             keywords: "lollapalooza 2026, cuanto falta lollapalooza, festival musica, faltapoco, contador lollapalooza",
             url: "https://faltapoco.com/lollapalooza",
@@ -492,37 +460,35 @@ export const pages = {
             image: "https://faltapoco.com/og/lollapalooza.png",
         },
         content: {
-            title: "Lollapalooza",
+            title: "Lollapalooza Argentina 2026",
             connector: "el",
             whatWhen: "Lollapalooza comienza el",
-            timeLeft: "para Lollapalooza",
-            info: ["Festival de música internacional.", "Fechas varían por país (Argentina, Chile, etc.).", "Desde el 13 al 15 de marzo del 2026."],
+            timeLeft: "para Lollapalooza 2026",
+            info: ["Festival de música internacional.", "Fechas varían por país (Argentina, Chile, etc.).", "Se espera del 20 al 22 de marzo del 2026."],
         }
     },
-
     copaLibertadoresFinal: {
         date: { targetIso: "2026-11-28T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para la Final de la Copa Libertadores? | Faltapoco.com",
-            description: "Contador para la final de la Copa Libertadores. Fecha y detalles del partido definitorio del fútbol sudamericano.",
+            pageTitle: "¿Cuánto falta para la Final de la Copa Libertadores 2026? | Faltapoco.com",
+            description: "Contador para la final de la Copa Libertadores 2026. Fecha y detalles del partido definitorio del fútbol sudamericano.",
             keywords: "copa libertadores 2026, final copa libertadores, cuanto falta libertadores, faltapoco, contador libertadores",
             url: "https://faltapoco.com/copa-libertadores-final",
             slug: "copa-libertadores-final",
             image: "https://faltapoco.com/og/copa-libertadores.png",
         },
         content: {
-            title: "Final de la Copa Libertadores",
+            title: "Final de la Copa Libertadores 2026",
             connector: "la",
             whatWhen: "La final de la Copa Libertadores es el",
-            timeLeft: "para la final de la Copa Libertadores",
+            timeLeft: "para la final de la Copa Libertadores 2026",
             info: ["Partido más importante de clubes en Sudamérica.", "Gran búsqueda en países latinos."],
         }
     },
-
     steamSummerSale: {
-        date: { targetIso: "2026-05-19T00:00:00Z" },
+        date: { targetIso: "2026-06-25T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Steam Summer Sale? | Faltapoco.com",
+            pageTitle: "¿Cuánto falta para el Steam Summer Sale 2026? | Faltapoco.com",
             description: "Contador para las rebajas de Steam en verano 2026. Fechas estimadas y consejos para compras.",
             keywords: "steam summer sale 2026, steam ofertas verano, cuanto falta steam sale, faltapoco, contador steam",
             url: "https://faltapoco.com/steam-summer-sale",
@@ -530,67 +496,64 @@ export const pages = {
             image: "https://faltapoco.com/og/steam-summer-sale.png",
         },
         content: {
-            title: "Steam Summer Sale",
+            title: "Steam Summer Sale 2026",
             connector: "la",
             whatWhen: "El Steam Summer Sale comienza el",
-            timeLeft: "para el Steam Summer Sale",
+            timeLeft: "para el Steam Summer Sale 2026",
             info: ["Rebajas importantes en videojuegos en Steam.", "Buscado por gamers y coleccionistas."],
         }
     },
-
     hotSaleArgentina: {
-        date: { targetIso: "2026-05-13T00:00:00Z" },
+        date: { targetIso: "2026-05-11T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para Hot Sale Argentina? | Faltapoco.com",
-            description: "Contador para Hot Sale Argentina: descuentos en e-commerce local. Fechas oficiales y recomendaciones.",
+            pageTitle: "¿Cuánto falta para Hot Sale Argentina 2026? | Faltapoco.com",
+            description: "Contador para Hot Sale Argentina 2026: descuentos en e-commerce local. Fechas oficiales y recomendaciones.",
             keywords: "hot sale 2026, hot sale argentina, cuanto falta hot sale, faltapoco, contador hot sale",
             url: "https://faltapoco.com/hot-sale-argentina",
             slug: "hot-sale-argentina",
             image: "https://faltapoco.com/og/hot-sale.png",
         },
         content: {
-            title: "Hot Sale Argentina",
+            title: "Hot Sale Argentina 2026",
             connector: "el",
             whatWhen: "El Hot Sale Argentina comienza el",
-            timeLeft: "para Hot Sale Argentina",
-            info: ["Evento de ecommerce con grandes descuentos.", "Fechas oficiales publicadas por las cámaras locales.", "Desde el 13 al 15 de mayo del 2026."],
+            timeLeft: "para Hot Sale Argentina 2026",
+            info: ["Evento de ecommerce con grandes descuentos.", "Fechas oficiales publicadas por las cámaras locales.", "Se espera del 11 al 13 de mayo del 2026."],
         }
     },
-
     diaDelNino: {
         date: { targetIso: "2026-08-16T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Día del Niño? | Faltapoco.com",
-            description: "Contador para el Día del Niño (fecha variable por país). Ideas de regalos y cuenta regresiva.",
+            pageTitle: "¿Cuánto falta para el Día del Niño 2026? | Faltapoco.com",
+            description: "Contador para el Día del Niño 2026 (fecha variable por país). Ideas de regalos y cuenta regresiva.",
             keywords: "dia del niño 2026, cuanto falta dia del niño, regalos dia del niño, faltapoco, contador dia del niño",
             url: "https://faltapoco.com/dia-del-nino",
             slug: "dia-del-nino",
             image: "https://faltapoco.com/og/dia-del-nino.png",
         },
         content: {
-            title: "Día del Niño",
+            title: "Día del Niño 2026",
             connector: "el",
             whatWhen: "El Día del Niño se celebra el",
-            timeLeft: "para el Día del Niño",
-            info: ["En Argentina suele ser en agosto.", "Fecha varía por país."],
+            timeLeft: "para el Día del Niño 2026",
+            info: ["En Argentina suele ser el tercer domingo de agosto.", "Fecha varía por país."],
         }
     },
-
     steamWinterSale: {
-        date: { targetIso: "2026-12-22T00:00:00Z" },
+        date: { targetIso: "2026-12-17T00:00:00Z" },
         meta: {
-            pageTitle: "¿Cuánto falta para el Steam Winter Sale? | Faltapoco.com",
-            description: "Cuenta regresiva para las ofertas de invierno en Steam. Fechas estimadas y recomendaciones de compras.",
+            pageTitle: "¿Cuánto falta para el Steam Winter Sale 2026? | Faltapoco.com",
+            description: "Cuenta regresiva para las ofertas de invierno en Steam 2026. Fechas estimadas y recomendaciones de compras.",
             keywords: "steam winter sale 2026, steam ofertas invierno, cuanto falta steam winter sale, faltapoco, contador steam winter",
             url: "https://faltapoco.com/steam-winter-sale",
             slug: "steam-winter-sale",
             image: "https://faltapoco.com/og/steam-winter-sale.png",
         },
         content: {
-            title: "Steam Winter Sale",
+            title: "Steam Winter Sale 2026",
             connector: "la",
             whatWhen: "El Steam Winter Sale suele iniciarse el",
-            timeLeft: "para el Steam Winter Sale",
+            timeLeft: "para el Steam Winter Sale 2026",
             info: ["Ofertas masivas en juegos en diciembre.", "Altamente buscado por la comunidad gamer."],
         }
     },
